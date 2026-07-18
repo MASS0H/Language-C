@@ -27,35 +27,44 @@ Exemple : dans "a + b", + est un operateur qui prend 2 valeurs ou plus en entree
 
 int main() {
     int a, b, c;
+    // sortie : a = 0 , b = 0, c = 0
     printf("veuillez saisir la valeur de a : ");
     scanf("%d", &a);
+    // sortie : a = 9 , b = 0, c = 0
     printf("veuillez saisir la valeur de b : ");
     scanf("%d", &b);
+    // sortie : a = 9 , b = 5, c = 0
 
     // utilisation de l'operateur d'affectation : signifie "affecter la valeur de 'b' à 'a'
-    // c'est la valeur a gauche qui change de valeur , et la valeur a droite ne se change pas
+    // c'est la valeur a gauche qui se change , et la valeur a droite ne se change pas
+
     a = b ;
     printf("%d \n", a);
     printf("%d \n", b);
     printf("%d \n", c);
-    printf("==================");
+    printf("================== \n");
+    // sortie : a = 5 , b = 5, c = 0
     c = a + b;
     printf("%d \n", a);
     printf("%d \n", b);
     printf("%d \n", c);
-    printf("==================");
-
-    b = a;
+    printf("==================\n");
+    // sortie : a = 5 , b = 5, c = 10
+    a = 9;
+    b = 5;
+    b = a; // cad b va prendre la valeur de a
     printf("%d \n", a);
     printf("%d \n", b);
     printf("%d \n", c);
-    printf("==================");
+    printf("================== \n");
+    // sortie : a = 9 , b = 9, c = 10
 
     c = a * b;
     printf("%d \n", a);
     printf("%d \n", b);
     printf("%d \n", c);
-    printf("==================");
+    printf("==================\n");
+    // sortie : a = 9 , b = 9 , c = 81
 
 
 
