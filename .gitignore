@@ -1,0 +1,11 @@
+# Ignorer tous les fichiers par defaut
+*
+
+# Ne pas ignorer les dossiers, afin de rechercher les fichiers .c recursivement
+!*/
+
+# Conserver tous les fichiers source C, presents et futurs
+!*.c
+
+# Conserver ce fichier de configuration dans Git
+!.gitignore
